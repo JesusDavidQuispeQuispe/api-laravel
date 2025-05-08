@@ -14,8 +14,6 @@ use App\Http\Controllers\Api\V1\PostController;
 |
 */
 
-Route::apiResource('v1/posts', PostController::class)->only('show');
+// Route::apiResource('v1/posts', PostController::class)->only('show');
 
-Route::middleware('api')->get('/ping', function () {
-    return response()->json(['message' => 'pong']);
-});
+Route::apiResource('v1/posts', PostController::class);

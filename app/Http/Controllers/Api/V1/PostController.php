@@ -13,7 +13,12 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        return response()->json(['message' => 'Listado de posts']);
+    }
+
+    public function show($id)
+    {
+        return response()->json(['message' => "Post con ID $id"]);
     }
 
     /**
@@ -27,10 +32,10 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Post $post)
-    {
-        return $post;
-    }
+    // public function show(Post $post)
+    // {
+    //     return $post;
+    // }
 
     /**
      * Update the specified resource in storage.

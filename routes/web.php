@@ -6,3 +6,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', [App\Http\Controllers\PostController::class, 'index']);
+
+
+
+
